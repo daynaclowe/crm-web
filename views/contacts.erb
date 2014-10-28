@@ -8,7 +8,7 @@
 <h1>Welcome to <%= @crm_app_name %></h1>
 <p> View All Contacts Here!</p>
 <ul>
-	<% @contacts.each do |contact| %>
+	<% $rolodex.contacts.each do |contact| %>
 	<li><%= contact.first_name %> <%= contact.last_name %> <%= contact.email %> <%= contact.note %></li>
 	<% end %>
 	<li><a href ="/">Back to the Main Page!</a></li>
